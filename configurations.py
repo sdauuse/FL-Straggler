@@ -10,7 +10,7 @@ def args_parser():
     parser.add_argument('--stragglers', type=str, default='drop',
                         choices=['salf', 'drop', None],
                         help="whether the FL is stragglers aware")
-    parser.add_argument('--stragglers_percent', type=float, default=1,
+    parser.add_argument('--stragglers_percent', type=float, default=0.6,
     #parser.add_argument('--stragglers_percent', type=float, default=0,
                         help="the percent of percent out of the edge users")
     parser.add_argument('--up_to_layer', type=int, default=1,
@@ -41,9 +41,9 @@ def args_parser():
     # parser.add_argument('--train_batch_size', type=int, default=16,
     # parser.add_argument('--train_batch_size', type=int, default=32,
     # parser.add_argument('--train_batch_size', type=int, default=48,
-    parser.add_argument('--train_batch_size', type=int, default=64,
+    # parser.add_argument('--train_batch_size', type=int, default=64,
     # parser.add_argument('--train_batch_size', type=int, default=128,
-    # parser.add_argument('--train_batch_size', type=int, default=500,
+    parser.add_argument('--train_batch_size', type=int, default=500,
     # parser.add_argument('--train_batch_size', type=int, default=1000,
                         help="trainset batch size")
     parser.add_argument('--local_iterations', type=int, default=1,
