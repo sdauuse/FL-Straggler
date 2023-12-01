@@ -41,9 +41,9 @@ def args_parser():
     # parser.add_argument('--train_batch_size', type=int, default=16,
     # parser.add_argument('--train_batch_size', type=int, default=32,
     # parser.add_argument('--train_batch_size', type=int, default=48,
-    parser.add_argument('--train_batch_size', type=int, default=64,
+    # parser.add_argument('--train_batch_size', type=int, default=64,
     # parser.add_argument('--train_batch_size', type=int, default=128,
-    # parser.add_argument('--train_batch_size', type=int, default=500,
+    parser.add_argument('--train_batch_size', type=int, default=500,
     # parser.add_argument('--train_batch_size', type=int, default=1000,
                         help="trainset batch size")
     parser.add_argument('--local_iterations', type=int, default=1,
